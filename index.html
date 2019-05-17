@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/sass.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper back">
+    <header>
+        <h1>Wednesday, 20 March</h1>
+    </header>
+
+    <table class="list">
+        <tr class="list__row">
+            <td class="list__data">
+                <label>
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkmark"></span><br>
+                    <span class="add">Morning workour</span>
+                </label>
+            </td>
+            <td class="list__data">
+                <span class="time">8:00 am</span>
+
+            </td>
+        </tr>
+
+        <tr class="list__row">
+            <td class="list__data time">
+                <label>
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkmark"></span><br>
+                    <span class="add">Breakfast</span>
+                </label>
+            </td>
+            <td class="list__data">
+                <span class="time">10 am</span>
+                </td>
+        </tr>
+
+        <tr class="list__row">
+            <td class="list__data">
+                <label>
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkmark"></span><br>
+                    <span class="add">Lunch</span>
+                </label>
+            </td>
+            <td class="list__data">
+                <span class="time">3 pm</span>
+            </td>
+        </tr>
+    </table>
+
+    <p class="message hidden">
+        No tasks.
+    </p>
+
+    <hr class="divide">
+    <div class="button">
+        <a class="btn"></a>
+    </div>
+
+    <template id="task-template">
+        <tr class="list__row">
+        <td class="list__data">
+            <label>
+                <input type="checkbox" class="checkbox">
+                <span class="checkmark"></span><br>
+                <span class="add"></span>
+            </label>
+        </td>
+        <td class="list__data">
+            <span class="time"></span>
+        </td>
+        </tr>
+    </template>
+
+</div>
+
+<div class="cover "></div>
+<div class="wrapper popup">
+    <header>
+        <h1>Hello! Add new task!</h1>
+    </header>
+    <section class="new_task">
+        <form class="task__form">
+            <input class="new_task_text" type="text" name="text" placeholder="Add text" required autofocus>
+            <div class="task__group">
+                <input class="new_task_time" type="time" name="time" value="08:00">
+                <button class="new_task_btn" type="submit">Add task</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+<script src="index.js"></script>
+<script src="tasks.js"></script>
+<script src="template.js"></script>
+</body>
+</html>

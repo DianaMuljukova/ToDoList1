@@ -1,0 +1,34 @@
+.list {
+  width: 300px;
+  margin: 30px auto 70px;
+  padding: 10px 30px 60px 30px;
+  border-collapse: collapse;
+
+  &__row {
+    cursor: pointer;
+  }
+
+  &__data {
+    font-size: 17px;
+    line-height: 2;
+  }
+
+  &__row:hover .checkmark {
+    background-color: $base-color;
+    transition: 1s;
+  }
+
+  &__row:hover .checkmark::after {
+    border-color: white;
+  }
+
+
+
+  &__row:active .checkmark::after {
+    border-color: $base-color;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}

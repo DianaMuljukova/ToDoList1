@@ -1,0 +1,44 @@
+$base-color: #f17838;
+
+
+body,
+html {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.wrapper {
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px gray;
+  width: 380px;
+  margin: 20px auto;
+  padding: 30px 15px;
+  background-color: white;
+}
+
+.divide {
+  margin: 0 0 50px 0;
+}
+
+.background {
+  background-color: #bbb;
+}
+
+@import "new-task";
+@import "header";
+@import "list";
+@import "button";
+@import "checkbox";
+
+.cover {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}

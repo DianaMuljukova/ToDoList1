@@ -1,0 +1,168 @@
+body,
+html {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif; }
+
+.wrapper {
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px gray;
+  width: 380px;
+  margin: 20px auto;
+  padding: 30px 15px;
+  background-color: white; }
+
+.divide {
+  margin: 0 0 50px 0; }
+
+.background {
+  background-color: #bbb; }
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 123px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: white; }
+
+.popup-open {
+  display: block; }
+
+.new_task {
+  padding: 30px 0;
+  width: 300px;
+  margin: 0 auto; }
+  .new_task_text {
+    width: 100%;
+    font: inherit;
+    border: none;
+    outline: none;
+    font-size: 23px; }
+  .new_task_btn {
+    border: none;
+    outline: none;
+    background-color: #f17838;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px; }
+  .new_task_btn:hover {
+    background-color: #f49868; }
+  .new_task_time {
+    border: none;
+    outline: none;
+    font: inherit; }
+
+.task__group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px; }
+
+.hidden {
+  display: none; }
+
+header {
+  background-color: #f17838;
+  text-align: center;
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; }
+  header h1 {
+    color: white;
+    margin: 0;
+    font-size: 20px; }
+
+.list {
+  width: 300px;
+  margin: 30px auto 70px;
+  padding: 10px 30px 60px 30px;
+  border-collapse: collapse; }
+  .list__row {
+    cursor: pointer; }
+  .list__data {
+    font-size: 17px;
+    line-height: 2; }
+  .list__row:hover .checkmark {
+    background-color: #f17838;
+    transition: 1s; }
+  .list__row:hover .checkmark::after {
+    border-color: white; }
+  .list__row:active .checkmark::after {
+    border-color: #f17838; }
+  .list label {
+    cursor: pointer; }
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f17838;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  cursor: pointer; }
+  .btn::before {
+    height: 25px;
+    border: 3px solid white;
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 27px; }
+  .btn::after {
+    width: 25px;
+    border: 3px solid white;
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: 13px; }
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%); }
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  display: inline-block;
+  border: 2px solid #f17838;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer; }
+
+label {
+  display: flex;
+  align-items: center; }
+
+.checkmark::after {
+  content: '';
+  width: 6px;
+  height: 11px;
+  border-right: 2px solid #f17838;
+  border-bottom: 2px solid #f17838;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 30%; }
+
+.cover {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: none; }
+  .cover.show {
+    display: block; }
+
+/*# sourceMappingURL=sass.css.map */
